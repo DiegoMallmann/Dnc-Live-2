@@ -4,36 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.f742b80f43c5a2e0e619b0d97b5886cd.js"></script>
+    <script  type="text/javascript" src="https://codesandbox.io/static/js/banner.be879265d.js"></script>
     <title>HBOMAX</title>
     <style type="text/css"> 
         body {
             padding: 30px;
+            background: #080808;
+            color: whitesmoke;
+            font-family: -apple-system, BlinkMacSystemFont, "segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            text-align: center;
         }
+
+        .logo {
+            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(999deg) brightness(150%) contrast(999%)
+        }
+
+        #central {
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #campos {
+            text-align: left;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #interno {
+            width: 40%;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        br{
+            display: block;
+            line-height: 5px;
+        }
+
+        input[type="text"] {
+      width: 100%;
+      padding: 5px 18px;
+      margin: 2px 0;
+      background-color: grey;
+      border-radius: 16px;
+      border: 2px solid grey;
+    }
+    input[type="password"] {
+      width: 100%;
+      padding: 5px 18px;
+      margin: 2px 0;
+      background-color: grey;
+      border-radius: 16px;
+      border: 2px solid grey;
+    }
+
+    input[type="submit"] {
+      padding: 5px 18px;
+      margin: 2px 0;
+      background-color: #8c77e0;
+      border-radius: 16px;
+      border: 2px solids#8c77e0;
+    }
+      
     </style>
 </head>
 <body>
-    <img id="hbo.png" src="hbo.png" width="200">
+    <img class="logo" id="hbo.png" src="hbo.png" width="100">
+    <br>
+    <a href="#">Menu</a><br>
+    <a href="#">Assinar</a><br>
     <h1> Entrar</h1>
     <p>Você tem uma conta HBO Max?</p>
     <br>
-    <p>Entrar</p>
-        <input type="text" name="Senha">
-        <br>
-        <p>Senha</p>
-        <input type="password" name="Senha">
-        <br>
-        <br>
-        <input type="submit" name="entrar" value="Entrar">
-        <br>
-        <br>
-        Você acessa a HBO Max por um provedor de TV,
-        <br>
-        de internet ou celular?
-        <br>
-        <br>
-        <input type="submit" name="Entrar" value=" Entrar como provedor">
-        
-    </div>
+    <div id="campos">
+        <div id="interno">
+          E-mail
+          <br /><br />
+          <input type="text" name="nome" /><br />
+          <br />
+          Senha
+          <br /><br />
+          <input type="password" name="Senha" /><br />
+          <br />
+        </div>
+      </div><br /><br /><br /><br />
+      <input id="Entrar" type="submit" name="entrar" value="Entrar" />
+      <br /><br />
+      <br /><br />
+      Você acessa a HBO Max por um provedor de TV,<br />
+      de internet ou celular?
+      <br /><br /><br /><br />
+      <input
+      id="provedor"
+      type="submit"
+      name="Entrar"
+      value="Entrar como provedor"
+    />
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/watermark-button.be960f43b.js"></script>
 </body>
 
 </html>
